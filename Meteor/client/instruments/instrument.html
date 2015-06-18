@@ -1,0 +1,29 @@
+<template name = "instrument">
+	
+	<div class="bg-info">
+		<h1> Instruments </h1>
+
+		<h3>Here's a list of instruments we plan on having available for hands free music making!</h3>
+			<br/>
+		Want more instruments? Type in your suggestions!
+		<form id="instrumentinput">
+			<input type="text" name="message"><input type="submit">
+		</form>
+		<hr/>
+
+		<ul>
+		{{#each instrumentFunction}}
+		  {{> instrumentDisplay}}
+		{{/each}}
+		</ul>
+		<br/>
+	</div>
+
+</template>
+
+
+<template name="instrumentDisplay">
+
+   			<li>{{name}}: {{status}}</li>
+
+</template>

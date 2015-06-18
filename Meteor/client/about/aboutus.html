@@ -1,0 +1,30 @@
+<template name="aboutus">
+
+	<div class="bg-info">	
+		<h1>About Us</h1>
+
+		This page was made by me (John) because music is fun.
+		<hr/>
+
+		Here is the team that brought you this amazing web app!
+		<table class="table table-condensed">
+			<thead>
+				<tr><th>Name</th><th>Email</th></tr>
+			</thead>
+			<tbody>
+		{{#each team}}
+		  {{> teamrow}}
+		{{/each}}
+			</tbody>
+		</table>
+	</div>
+
+</template>
+
+
+<template name="teamrow">
+   <tr>
+   	  <td>{{name}}</td>
+   	  <td>{{email}}</td>
+   </tr>
+</template>
