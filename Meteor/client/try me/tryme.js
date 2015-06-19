@@ -1,6 +1,7 @@
 	final_transcript = '';
 	var recognizing = false;
 
+
 	//Musical Notes
 	var aNote = new buzz.sound('/sounds/68437__pinkyfinger__piano-a.wav');
 	var asNote = new buzz.sound('/sounds/68439__pinkyfinger__piano-bb.wav');
