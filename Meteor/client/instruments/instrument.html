@@ -5,11 +5,16 @@
 
 		<h3>Here's a list of instruments we plan on having available for hands free music making!</h3>
 			<br/>
+		{{#if currentUser}}	
 		Want more instruments? Type in your suggestions!
 		<form id="instrumentinput">
 			<input type="text" name="message"><input type="submit">
 		</form>
 		<hr/>
+
+		{{else}}
+		<p>You must be logged in to see the user profiles</p>
+		{{/if}}
 
 		<ul>
 		{{#each instrumentFunction}}
