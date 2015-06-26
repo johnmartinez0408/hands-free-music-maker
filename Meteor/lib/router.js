@@ -12,6 +12,8 @@ Router.route('/functionality', {name: 'functionality'});
 
 Router.route('/instruments', {name:'instrument'})
 
+Router.route('/draw', {name:'draw'})
+
 Router.route('/aboutus', {name:'aboutus'})
 
 Router.route('/people',{name:'people'});
