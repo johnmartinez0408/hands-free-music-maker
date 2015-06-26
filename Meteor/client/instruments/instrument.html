@@ -16,12 +16,23 @@
 		<p>You must be logged in to see the user profiles</p>
 		{{/if}}
 
-		<ul>
-		{{#each instrumentFunction}}
-		  {{> instrumentDisplay}}
-		{{/each}}
-		</ul>
-		<br/>
+		<button id="sortname">Sort by name</button>
+
+		{{#if sorted}}
+			<ul>
+			{{#each instrumentSortedFunction}}
+			  {{> instrumentDisplay}}
+			{{/each}}
+			</ul>
+			<br/>
+		{{else}}
+			<ul>
+			{{#each instrumentFunction}}
+			  {{> instrumentDisplay}}
+			{{/each}}
+			</ul>
+			<br/>
+		{{/if}}
 	</div>
 
 </template>

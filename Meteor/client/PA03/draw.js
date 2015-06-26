@@ -3,7 +3,6 @@ direction = 1;
 Template.draw.events({
 	"click #flip": function(event){
 		direction*=-1;
-		window.requestAnimationFrame(drawStuff);
 	}
 })
 
@@ -27,4 +26,6 @@ function drawStuff(){
 	window.requestAnimationFrame(drawStuff);
 
 };
+
+Template.draw.rendered = drawStuff;
 
