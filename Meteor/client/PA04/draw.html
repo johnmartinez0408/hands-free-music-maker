@@ -1,0 +1,40 @@
+<template name = "draw">
+
+<button id="startgame">Start</button>
+<form id="leaderboardinput">
+	<input type="text" name="message"><input type="submit">
+</form>
+
+<br/>
+
+
+<div class="col-md-7 bg-info">
+	<h2> Avoid the evil bubbles for as long as you can!</h2>
+<canvas id="gameboard" width="600" height="400">
+		get a better browser!!!
+</canvas>
+</div>
+
+
+<div class="col-md-5 bg-info">
+	<h2>Leaderboard</h2>
+<ul>
+	{{#each leaderboardFunction}}
+		{{> leaderboardDisplay}}
+	{{/each}}
+</ul>
+<br/>
+</div>
+
+</template>
+
+	
+
+
+
+
+<template name="leaderboardDisplay">
+
+   			<li>{{name}}: {{score}}</li>
+
+</template>
